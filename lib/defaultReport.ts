@@ -31,26 +31,38 @@ export const defaultReport: Report = {
     {
       id: 'section-1',
       type: 'text',
-      content: `# The Vision
+      content: `# The Centre: The Next Chapter in Community-Led Enterprise
 
-**The Centre** is a site in Townsville held under a new **30-year lease** by the **Palm Island Community Company (PICC)**.
+**The Centre** represents the next chapter in Palm Island Community Company's remarkable story of community-led transformation.
 
-For decades, this land has had many lives—first as a youth services facility, then privately managed and lived on for 30 years, and now returned to community hands. The site currently sits "fallow"—overgrown and in need of deep cleaning—but the "bones" of the property are strong, waiting to be cultivated into something regenerative.
+PICC has grown from a single employee to 197, established Australia's first Indigenous community-owned digital service centre, and demonstrated what's possible when communities lead their own development. This Townsville site—held under a new **30-year lease**—extends that proven model into new domains and a new geography.
 
-The vision is to transform this neglected site into a thriving **regional hub** that acts as a bridge between Townsville and Palm Island. It is designed not just as a facility, but as an ecosystem of training, industry, and culture.
+For decades, this land has had many lives—first serving young people through youth services, then privately managed. Now it returns to its original purpose: a place where young people and community can build something meaningful together. The property's "bones" are strong, ready to be transformed into a **bridge between Townsville and Palm Island**.
 
-**Core Pillars of the Master Plan:**
+**The Centre is designed around four outcome pillars:**
 
-1. **Goods Manufacturing & Circular Economy:**
-    - A dedicated **Goods Workshop** to manufacture recycled-plastic bed bases and refurbish washing machines.
-    - Creating a closed-loop system where waste is diverted from landfill and turned into essential items for the region.
-2. **Youth Justice & Pathways:**
-    - A safe, transformative space for young people, particularly from Palm Island.
-    - Focus on diversionary programs (partnering with Diagrama) and real-world skills training (construction, manufacturing).
-    - **"Learning by Doing":** Young people will help build the site itself—constructing modular tiny homes and repairing infrastructure.
-3. **Accommodation & Hospitality:**
-    - Revitalising the kitchen for catering and hospitality training.
-    - Providing short-stay accommodation for visiting trainees and mentors.`,
+1. **Employment Pathways for Young People:**
+    - Real jobs with real wages in construction, manufacturing, hospitality, and maintenance
+    - Young people learn by building the site itself, then transition into ongoing employment
+    - Enterprise income supports young people while they gain qualifications and experience
+    - Addresses the documented 29.1% unemployment rate while creating pathways that don't require leaving community
+
+2. **Healthy Food Production:**
+    - Commercial kitchen positioned as a targeted response to documented food security challenges
+    - Producing nutritious meals for elder care on Palm Island addresses the declining Elder population's needs
+    - Training in food preparation and commercial kitchen operations creates hospitality qualifications
+    - Connects to PICC's integrated service model—potentially supplying school breakfast programs, family wellbeing services, and community events
+
+3. **Circular Economy Manufacturing:**
+    - Building on storm recovery innovations—industrialising the bed and washing machine work that proved its value during the February 2024 crisis
+    - Plastic collection and recycling creates environmental benefit while generating manufacturing inputs
+    - Production serves both Palm Island and broader regional needs, creating an exportable model
+    - Positions PICC as an innovation leader rather than a service recipient
+
+4. **Regional Connection:**
+    - A mainland base for Palm Islanders—young people in education, families accessing medical care, workers in training
+    - Addresses the documented challenge of maintaining cultural connection when community members must travel to the mainland
+    - Culturally connected accommodation during transitions that would otherwise mean separation from family and community`,
       layout: 'center'
     },
     {
