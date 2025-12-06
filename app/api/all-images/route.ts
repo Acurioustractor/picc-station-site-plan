@@ -1,45 +1,19 @@
 import { NextResponse } from 'next/server';
-import { readdir, stat } from 'fs/promises';
-import path from 'path';
+import { siteData } from '@/lib/siteData';
 
 export async function GET() {
   try {
-    const locationsPath = path.join(process.cwd(), 'public', 'images', 'locations');
-
     const allImages: { url: string; name: string; location: string }[] = [];
 
-    // Read all location folders
-    const locationFolders = await readdir(locationsPath);
-
-    for (const folder of locationFolders) {
-      const folderPath = path.join(locationsPath, folder);
-      const folderStat = await stat(folderPath);
-
-      if (folderStat.isDirectory()) {
-        try {
-          const files = await readdir(folderPath);
-
-          // Filter for image files
-          const imageFiles = files.filter(file =>
-            /\.(jpg|jpeg|png|webp|gif)$/i.test(file)
-          );
-
-          // Format location name from folder name (e.g., "kitchen-block" -> "Kitchen Block")
-          const locationName = folder
-            .split('-')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-
-          for (const file of imageFiles) {
-            allImages.push({
-              url: `/images/locations/${folder}/${file}`,
-              name: file,
-              location: locationName
-            });
-          }
-        } catch (err) {
-          // Skip folders we can't read
-          console.error(`Error reading folder ${folder}:`, err);
+    // Get images from siteData (works reliably on Vercel)
+    for (const location of siteData.locations) {
+      if (location.images && location.images.length > 0) {
+        for (const img of location.images) {
+          allImages.push({
+            url: img.url,
+            name: img.caption || img.url.split('/').pop() || 'Image',
+            location: location.title
+          });
         }
       }
     }
@@ -52,7 +26,7 @@ export async function GET() {
       count: allImages.length
     });
   } catch (error) {
-    console.error('Error scanning all images:', error);
-    return NextResponse.json({ images: [], count: 0, error: 'Failed to scan images' }, { status: 500 });
+    console.error('Error getting images:', error);
+    return NextResponse.json({ images: [], count: 0, error: 'Failed to get images' }, { status: 500 });
   }
 }
