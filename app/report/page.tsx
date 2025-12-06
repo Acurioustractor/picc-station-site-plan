@@ -649,8 +649,8 @@ export default function ReportPage() {
         layout: 'center'
       });
 
-      // Use preserved hero image, existing report hero image, or default
-      const defaultHeroImage = yarning?.images?.[1]?.url || mainEntry?.images?.[0]?.url;
+      // Use preserved hero image, existing report hero image, or default (drone shot for best impact)
+      const defaultHeroImage = '/images/locations/media-library/1764888823805-DJI-0409.jpg';
       const heroImageToUse = preserveHeroImage || report.heroImage || defaultHeroImage;
 
       setReport({
