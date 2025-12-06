@@ -11,12 +11,14 @@ export interface ReportSection {
   layout?: 'full' | 'center' | 'left' | 'right';
   stats?: { label: string; value: string }[];
   images?: string[];
+  imagePosition?: number; // 0-100 percentage for vertical position (0=top, 50=center, 100=bottom)
 }
 
 export interface Report {
   title: string;
   subtitle: string;
   heroImage?: string;
+  heroImagePosition?: number; // 0-100 percentage for vertical position (0=top, 50=center, 100=bottom)
   sections: ReportSection[];
 }
 

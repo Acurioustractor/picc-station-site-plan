@@ -267,6 +267,7 @@ export default function ReportPage() {
               alt="Report hero"
               fill
               className="object-cover"
+              style={{ objectPosition: `center ${report.heroImagePosition ?? 50}%` }}
               priority
             />
           ) : (
@@ -287,6 +288,25 @@ export default function ReportPage() {
               <span className="hidden sm:inline">{report.heroImage ? 'Change Hero Image' : 'Add Hero Image'}</span>
               <span className="sm:hidden">{report.heroImage ? 'Change' : 'Add'}</span>
             </button>
+          )}
+
+          {/* Image position slider for main hero */}
+          {editMode && report.heroImage && (
+            <div className="absolute top-2 sm:top-4 left-2 sm:left-4 z-20 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              <label className="text-xs font-medium text-stone-600 block mb-1">Image Position</label>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-stone-500">Top</span>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={report.heroImagePosition ?? 50}
+                  onChange={(e) => setReport({ ...report, heroImagePosition: parseInt(e.target.value) })}
+                  className="w-24 h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-orange-600"
+                />
+                <span className="text-xs text-stone-500">Bottom</span>
+              </div>
+            </div>
           )}
 
           <div className="relative z-10 text-center px-4 max-w-4xl w-full">
@@ -377,6 +397,7 @@ export default function ReportPage() {
                         alt={section.caption || ''}
                         fill
                         className="object-cover"
+                        style={{ objectPosition: `center ${section.imagePosition ?? 50}%` }}
                       />
                       {/* Click to swap overlay */}
                       {editMode && (
@@ -392,6 +413,24 @@ export default function ReportPage() {
                             Click to Swap Image
                           </div>
                         </button>
+                      )}
+                      {/* Position slider control */}
+                      {editMode && (
+                        <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg z-10">
+                          <label className="text-xs font-medium text-stone-600 block mb-1">Image Position</label>
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs text-stone-500">Top</span>
+                            <input
+                              type="range"
+                              min="0"
+                              max="100"
+                              value={section.imagePosition ?? 50}
+                              onChange={(e) => updateSection(section.id, { imagePosition: parseInt(e.target.value) })}
+                              className="w-24 h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-orange-600"
+                            />
+                            <span className="text-xs text-stone-500">Bottom</span>
+                          </div>
+                        </div>
                       )}
                     </>
                   ) : (
@@ -433,6 +472,7 @@ export default function ReportPage() {
                         alt={section.caption || ''}
                         fill
                         className="object-cover"
+                        style={{ objectPosition: `center ${section.imagePosition ?? 50}%` }}
                       />
                       {/* Click to swap overlay */}
                       {editMode && (
@@ -448,6 +488,24 @@ export default function ReportPage() {
                             Swap Image
                           </div>
                         </button>
+                      )}
+                      {/* Position slider control */}
+                      {editMode && (
+                        <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg z-10">
+                          <label className="text-xs font-medium text-stone-600 block mb-1">Position</label>
+                          <div className="flex items-center gap-1">
+                            <span className="text-xs text-stone-500">T</span>
+                            <input
+                              type="range"
+                              min="0"
+                              max="100"
+                              value={section.imagePosition ?? 50}
+                              onChange={(e) => updateSection(section.id, { imagePosition: parseInt(e.target.value) })}
+                              className="w-16 h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-orange-600"
+                            />
+                            <span className="text-xs text-stone-500">B</span>
+                          </div>
+                        </div>
                       )}
                     </div>
                   ) : (
