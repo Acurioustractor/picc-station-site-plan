@@ -5,24 +5,24 @@ export async function POST(request: Request) {
   try {
     const report = await request.json();
 
-    // Delete existing report blob first (if any)
+    // Delete existing report blobs first (required - put doesn't overwrite)
     try {
       const { blobs } = await list({ prefix: 'report' });
       for (const blob of blobs) {
-        if (blob.pathname === 'report.json') {
-          await del(blob.url);
-        }
+        await del(blob.url);
+        console.log('Deleted old report blob:', blob.pathname);
       }
-    } catch (delError) {
-      // Ignore delete errors - file might not exist
-      console.log('No existing blob to delete or delete failed:', delError);
+    } catch (delErr) {
+      console.log('No existing blobs to delete:', delErr);
     }
 
-    // Save new report to Vercel Blob
+    // Save the new report
     const blob = await put('report.json', JSON.stringify(report, null, 2), {
       access: 'public',
       addRandomSuffix: false,
     });
+
+    console.log('Report saved successfully to:', blob.url);
 
     return NextResponse.json({
       success: true,
