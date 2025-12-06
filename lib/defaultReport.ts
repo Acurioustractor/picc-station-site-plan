@@ -65,7 +65,7 @@ The vision is to transform this neglected site into a thriving **regional hub** 
     {
       id: 'section-3',
       type: 'video',
-      videoUrl: 'https://www.youtube.com/watch?v=wL_wQEH3W6I',
+      videoUrl: 'https://share.descript.com/view/naU3OENJuxx',
       caption: 'Shaun on Palm - Shaun Cristis-David discusses the opportunity at Palm Island',
       layout: 'full'
     },
