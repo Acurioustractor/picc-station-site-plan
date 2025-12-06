@@ -37,7 +37,7 @@ const getVideoEmbedUrl = (url: string): string => {
 
 export default function ReportPage() {
   const [editMode, setEditMode] = useState(false);
-  // Use static default report - same for all visitors
+  // Use static default report as initial state, then load saved version
   const [report, setReport] = useState<Report>(defaultReport);
   const [showMediaPicker, setShowMediaPicker] = useState(false);
   const [currentSectionId, setCurrentSectionId] = useState<string | null>(null);
@@ -45,6 +45,8 @@ export default function ReportPage() {
   const [mediaLibrary, setMediaLibrary] = useState<any[]>([]);
   const [allImages, setAllImages] = useState<{url: string; name: string; location: string}[]>([]);
   const [imageSearch, setImageSearch] = useState('');
+  const [isSaving, setIsSaving] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Load ALL images from disk (not just siteData)
   useEffect(() => {
@@ -87,10 +89,44 @@ export default function ReportPage() {
     }
   }, []);
 
-  // Save report to localStorage
-  const saveReport = () => {
-    localStorage.setItem('picc-report', JSON.stringify(report));
-    toast.success('Report saved');
+  // Load saved report from Vercel Blob on startup
+  useEffect(() => {
+    fetch('/api/load-report')
+      .then(res => res.json())
+      .then(data => {
+        if (data.exists && data.report) {
+          setReport(data.report);
+          console.log('Loaded saved report from cloud');
+        }
+        setIsLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load saved report:', err);
+        setIsLoading(false);
+      });
+  }, []);
+
+  // Save report to Vercel Blob (permanent cloud storage)
+  const saveReport = async () => {
+    setIsSaving(true);
+    try {
+      const res = await fetch('/api/save-report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(report)
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast.success('Report saved to cloud - all visitors will see your changes!');
+      } else {
+        throw new Error(data.error);
+      }
+    } catch (err) {
+      console.error('Failed to save report:', err);
+      toast.error('Failed to save report. Try again.');
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   const addSection = (type: ReportSection['type']) => {
@@ -204,11 +240,16 @@ export default function ReportPage() {
             {editMode && (
               <button
                 onClick={saveReport}
-                className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium text-xs sm:text-sm whitespace-nowrap min-h-[44px]"
+                disabled={isSaving}
+                className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm whitespace-nowrap min-h-[44px] ${
+                  isSaving
+                    ? 'bg-green-400 text-white cursor-not-allowed'
+                    : 'bg-green-600 text-white hover:bg-green-700'
+                }`}
               >
-                <Save size={18} />
-                <span className="hidden sm:inline">Save Report</span>
-                <span className="sm:hidden">Save</span>
+                <Save size={18} className={isSaving ? 'animate-pulse' : ''} />
+                <span className="hidden sm:inline">{isSaving ? 'Saving...' : 'Save Report'}</span>
+                <span className="sm:hidden">{isSaving ? '...' : 'Save'}</span>
               </button>
             )}
           </div>
