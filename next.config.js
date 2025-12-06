@@ -15,8 +15,13 @@ const nextConfig = {
   },
   // Fix multiple lockfiles warning by setting the workspace root
   outputFileTracingRoot: __dirname,
-  // Enable static exports if needed for simple hosting
-  // output: 'export',
+  // Exclude large image files from serverless function bundles
+  outputFileTracingExcludes: {
+    '*': [
+      './public/images/**',
+      './public/images/locations/**',
+    ],
+  },
 };
 
 module.exports = nextConfig;
