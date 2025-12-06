@@ -1,14 +1,27 @@
-import { put } from '@vercel/blob';
+import { put, del, list } from '@vercel/blob';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
     const report = await request.json();
 
-    // Save report to Vercel Blob
+    // Delete existing report blob first (if any)
+    try {
+      const { blobs } = await list({ prefix: 'report' });
+      for (const blob of blobs) {
+        if (blob.pathname === 'report.json') {
+          await del(blob.url);
+        }
+      }
+    } catch (delError) {
+      // Ignore delete errors - file might not exist
+      console.log('No existing blob to delete or delete failed:', delError);
+    }
+
+    // Save new report to Vercel Blob
     const blob = await put('report.json', JSON.stringify(report, null, 2), {
       access: 'public',
-      addRandomSuffix: false, // Always use the same filename
+      addRandomSuffix: false,
     });
 
     return NextResponse.json({
@@ -16,10 +29,10 @@ export async function POST(request: Request) {
       url: blob.url,
       message: 'Report saved successfully'
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Failed to save report:', error);
     return NextResponse.json(
-      { success: false, error: 'Failed to save report' },
+      { success: false, error: error?.message || 'Failed to save report' },
       { status: 500 }
     );
   }
