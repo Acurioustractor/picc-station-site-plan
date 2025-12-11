@@ -34,3 +34,6 @@ next-env.d.ts
 
 # activity logs
 /logs
+
+# beads (managed at parent project level)
+.beads/
