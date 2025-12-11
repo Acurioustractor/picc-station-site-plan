@@ -56,15 +56,15 @@ export default function InteractiveMap() {
   const getImagePath = () => {
     switch (currentLayer) {
       case 'drawing':
-        return '/images/Drawing Colour.webp';
+        return '/images/site-plan.webp';
       case 'photo':
-        return '/images/Photo.webp';
+        return '/images/old-site.webp';
       case 'photo-after':
-        return '/images/Photo-after.webp';
+        return '/images/old-site-day-1.webp';
       case 'sketch':
-        return '/images/Sketch.webp';
+        return '/images/sketch-reference.webp';
       default:
-        return '/images/Photo.webp';
+        return '/images/old-site.webp';
     }
   };
 

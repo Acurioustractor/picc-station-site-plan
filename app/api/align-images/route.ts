@@ -12,8 +12,8 @@ export async function POST(request: NextRequest) {
     // Process Photo layer
     if (photo && (photo.x !== 0 || photo.y !== 0 || photo.scale !== 100)) {
       await transformImage(
-        path.join(imagesDir, 'Photo.webp'),
-        path.join(imagesDir, 'Photo.webp'),
+        path.join(imagesDir, 'old-site.webp'),
+        path.join(imagesDir, 'old-site.webp'),
         photo.x || 0,
         photo.y || 0,
         photo.scale || 100
@@ -23,8 +23,8 @@ export async function POST(request: NextRequest) {
     // Process Drawing layer
     if (drawing && (drawing.x !== 0 || drawing.y !== 0 || drawing.scale !== 100)) {
       await transformImage(
-        path.join(imagesDir, 'Drawing Colour.webp'),
-        path.join(imagesDir, 'Drawing Colour.webp'),
+        path.join(imagesDir, 'site-plan.webp'),
+        path.join(imagesDir, 'site-plan.webp'),
         drawing.x || 0,
         drawing.y || 0,
         drawing.scale || 100
@@ -34,8 +34,8 @@ export async function POST(request: NextRequest) {
     // Process Sketch layer
     if (sketch && (sketch.x !== 0 || sketch.y !== 0 || sketch.scale !== 100)) {
       await transformImage(
-        path.join(imagesDir, 'Sketch.webp'),
-        path.join(imagesDir, 'Sketch.webp'),
+        path.join(imagesDir, 'sketch-reference.webp'),
+        path.join(imagesDir, 'sketch-reference.webp'),
         sketch.x || 0,
         sketch.y || 0,
         sketch.scale || 100

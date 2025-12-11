@@ -17,18 +17,18 @@ const config = {
   outputFormat: 'webp', // Change to 'original' if you want to keep JPG/PNG
 };
 
-// Images to optimize
+// Images to optimize (source files in originals folder)
 const images = [
   {
-    input: path.join(__dirname, '../public/images/Drawing Colour.png'),
+    input: path.join(__dirname, '../originals/Drawing Colour.png'),
     outputName: 'Drawing Colour',
   },
   {
-    input: path.join(__dirname, '../public/images/Sketch.png'),
+    input: path.join(__dirname, '../originals/Sketch.png'),
     outputName: 'Sketch',
   },
   {
-    input: path.join(__dirname, '../public/images/Photo.jpg'),
+    input: path.join(__dirname, '../originals/Photo.jpg'),
     outputName: 'Photo',
   },
 ];

@@ -477,7 +477,7 @@ export default function LiveAlignmentPage() {
               }}
             >
               <Image
-                src="/images/Photo.webp"
+                src="/images/old-site.webp"
                 alt="Photo layer"
                 width={2000}
                 height={1500}
@@ -496,7 +496,7 @@ export default function LiveAlignmentPage() {
               }}
             >
               <Image
-                src="/images/Drawing Colour.webp"
+                src="/images/site-plan.webp"
                 alt="Drawing layer"
                 width={2000}
                 height={1493}
@@ -515,7 +515,7 @@ export default function LiveAlignmentPage() {
               }}
             >
               <Image
-                src="/images/Sketch.webp"
+                src="/images/sketch-reference.webp"
                 alt="Sketch layer"
                 width={2000}
                 height={1493}

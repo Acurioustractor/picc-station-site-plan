@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Centre - Interactive Site Map",
-  description: "The Centre – Palm Island–Townsville Circular Economy & Youth Pathways Precinct interactive site plan",
-  keywords: ["The Centre", "PICC", "Palm Island", "Townsville", "circular economy", "youth pathways"],
+  title: "Mounty Yarns - Interactive Site Plan",
+  description: "Mounty Yarns amplifies lived-experience stories and collective solutions shared by Aboriginal young people to create a safer, fairer future for Mount Druitt. Interactive site development plan on Darug Country.",
+  keywords: ["Mounty Yarns", "Mount Druitt", "Aboriginal youth", "Darug Country", "Just Reinvest", "community development", "interactive map"],
 };
 
 export default function RootLayout({

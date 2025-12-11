@@ -104,7 +104,7 @@ export default function ImageAlignmentTool() {
                 style={{ opacity: photoOpacity / 100 }}
               >
                 <Image
-                  src="/images/Photo.webp"
+                  src="/images/old-site.webp"
                   alt="Photo layer"
                   width={1920}
                   height={1440}
@@ -119,7 +119,7 @@ export default function ImageAlignmentTool() {
                 style={{ opacity: drawingOpacity / 100 }}
               >
                 <Image
-                  src="/images/Drawing Colour.webp"
+                  src="/images/site-plan.webp"
                   alt="Drawing layer"
                   width={1920}
                   height={1440}
@@ -134,7 +134,7 @@ export default function ImageAlignmentTool() {
                 style={{ opacity: sketchOpacity / 100 }}
               >
                 <Image
-                  src="/images/Sketch.webp"
+                  src="/images/sketch-reference.webp"
                   alt="Sketch layer"
                   width={1920}
                   height={1440}
