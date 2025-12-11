@@ -25,12 +25,12 @@ const imageSources = [
     outputName: 'old-site',
   },
   {
-    input: path.join(__dirname, '../../Final Photos/Old-site-Day-1.jpg'),
+    input: path.join(__dirname, '../../Final Photos/New-site.jpg'),
     outputDir: path.join(__dirname, '../public/images'),
-    outputName: 'old-site-day-1',
+    outputName: 'current-site',
   },
   {
-    input: path.join(__dirname, '../../Final Photos/Site plan.png'),
+    input: path.join(__dirname, '../../Final Photos/New-site-future.png'),
     outputDir: path.join(__dirname, '../public/images'),
     outputName: 'site-plan',
   },

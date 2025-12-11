@@ -97,8 +97,8 @@ export const PROJECT_CONFIG = {
 export const MAP_LAYERS = {
   drawing: {
     path: "/images/site-plan.webp",
-    label: "Site Plan",
-    description: "Site development plan",
+    label: "Vision",
+    description: "Future site development plan",
   },
   sketch: {
     path: "/images/sketch-reference.webp",
@@ -111,9 +111,9 @@ export const MAP_LAYERS = {
     description: "Original site photo",
   },
   photoAfter: {
-    path: "/images/old-site-day-1.webp",
-    label: "Day 1",
-    description: "Site on day 1",
+    path: "/images/current-site.webp",
+    label: "Current",
+    description: "Current site state",
   },
 } as const;
 
