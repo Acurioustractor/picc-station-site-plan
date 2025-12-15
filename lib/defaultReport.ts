@@ -23,197 +23,324 @@ export interface Report {
 }
 
 export const defaultReport: Report = {
-  title: 'Mounty Yarns - Site Development',
-  subtitle: 'A Safe Place Where Young People Can Just Be Kids',
+  title: 'Backyard Activation Report',
+  subtitle: 'Dec 9–10, 2024 — What happened, what it means, and how it strengthens the case for support',
   heroImage: '/images/old-site.webp',
   sections: [
-    // ===== SECTION 1: INTRODUCTION =====
+    // ===== OVERVIEW =====
     {
-      id: 'section-1',
+      id: 'section-overview',
       type: 'text',
-      content: `# What is Mounty Yarns?
+      content: `# Infrastructure for Belonging
 
-**Home.** It brings everyone together. We're all from different places, but close. Mount Druitt is home for a lot of us—non-Indigenous people and Indigenous people. It's really diverse, got a lot of nationalities.
+The "day in the yard" was not a tidy construction milestone. It was an act of **community governance, youth ownership, and visible proof** that Mounty is building a *real place* where young people can lead, learn, and host others on their own terms.
 
-Before we had this space, a lot of young people didn't really have somewhere to go. We just needed a **safe place where young Black lives can hang around** and not be seen as consorting, like criminals or up to no good all the time.
+The backyard activation is not "an improvement project." It is **infrastructure for belonging**, functioning as both:
 
-We just wanted to hang around sometimes—play football, just kick back with each other. It was like a family thing.`,
+- an **operational base** (tools, storage, shade, safer workflows, a space that works in heat), and
+- a **narrative engine** (where stories get told, filmed, taught, and shared back to funders and decision-makers).
+
+That dual function is exactly what makes this investment powerful: the site is a lever for both **immediate impact** and **long-term scalability**.`,
       layout: 'center'
     },
     {
-      id: 'section-2',
-      type: 'quote',
-      content: "It's almost like a second home. Even a first home for some kids. They can actually come here and just be themselves, express their feelings, or they can just come in and be kids.",
-      author: "Mounty Yarns Team Member",
-      layout: 'center'
-    },
-    {
-      id: 'section-3',
+      id: 'section-stats',
       type: 'stats',
       stats: [
+        { label: 'Years in the Making', value: '3' },
         { label: 'Team Size', value: '20+' },
         { label: 'Programs Running', value: '10+' },
-        { label: 'Years Growing', value: '3' },
         { label: 'Status', value: 'Building' }
       ],
       layout: 'center'
     },
 
-    // ===== SECTION 2: HOW IT STARTED =====
+    // ===== WHAT THE DAY WAS =====
     {
-      id: 'section-4',
+      id: 'section-divider-1',
       type: 'divider',
-      content: 'How It Started',
+      content: 'What the Day Actually Was',
       layout: 'center'
     },
     {
-      id: 'section-5',
+      id: 'section-day',
       type: 'text',
-      content: `## Youth Ambassadors Leading Change
+      content: `## Three Things Happening at Once
 
-It started with youth ambassadors who spoke to funders and politicians and got their story out—about how policies and procedures affected them.
+Across the interviews, people described the day as:
 
-We had a lot of people behind us... Daniel, Nick, De, Sarah, Jess and Julie. People who **believed in us**.
+**1. A Practical Build Day**
+Painting, landscaping, framing, planning the layout. Young people and mentors working side by side in the heat.
 
-Funders and politicians were blown away by the young people saying something that had never been said before. That perspective being available to them made a lot of people get behind this—having young people leading it.
+**2. A Youth-Led Cultural Moment**
+Flag-making, gathering, mentoring, learning by doing. The Aboriginal flag was painted on the container and laid out in mulch on the ground—ownership markers that tell visitors: *this is a place with cultural governance and pride*.
 
-**From one person to a team of 20 in three years.**`,
-      layout: 'center'
-    },
-
-    // ===== SECTION 3: THE DIFFERENCE =====
-    {
-      id: 'section-6',
-      type: 'divider',
-      content: 'The Difference',
+**3. A Transition Point**
+From "we've talked about this for ages" to "we've started." Three years of planning finally turning into visible action.`,
       layout: 'center'
     },
     {
-      id: 'section-7',
-      type: 'text',
-      content: `## Why This Works
-
-If you gave kids the option between a case meeting and here, they'll come here. They feel a lot more safer. Their voice is actually heard.
-
-If you go to a case officer at DCJ, it's just them telling the kid what to do—that authority thing. Sometimes you get a caseworker who doesn't care, just wants a paycheck. They don't have that kid's best interest at heart.
-
-But here? **We make sure the kid's heard.** People here hold systems to account. They're really for young people.
-
-In a lot of systems you have to fit into a very neat category—have a charge, be over 12 years old. Here, **we want to help when help is needed.**`,
-      layout: 'center'
-    },
-    {
-      id: 'section-8',
+      id: 'section-quote-isaiah',
       type: 'quote',
-      content: "Any young person that comes through the door, someone will try and help, even if it's not their job or we're not funded for it. We just try to help. It's just what Mounty was like for us growing up. You just pay it forward as you get older.",
-      author: "Mounty Yarns Team Member",
+      content: "This space has been in the make in the works for about three years now… but today, finally kicking it off.",
+      author: "Isaiah",
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-taj',
+      type: 'quote',
+      content: "Safe place for young kids in the Mount Druitt area.",
+      author: "Taj",
       layout: 'center'
     },
 
-    // ===== SECTION 4: PROGRAMS =====
+    // ===== YOUTH OWNERSHIP =====
     {
-      id: 'section-9',
+      id: 'section-divider-2',
       type: 'divider',
-      content: 'What We Do',
+      content: 'Youth Ownership is the Mechanism',
       layout: 'center'
     },
     {
-      id: 'section-10',
+      id: 'section-ownership',
       type: 'text',
-      content: `## Programs & Training
+      content: `## Not Participants — Builders
 
-**Weekly Programs:**
-- Youth on Track
-- Cultural Days
-- Boxing Fridays
-- Girls Program Wednesdays
-- Cooking Programs
-- Digital Art
-- Gym Program
-- Driver Licensing
+A repeated theme is that the space only works if young people are not treated as participants in someone else's plan. They must be *builders, decision-makers, and authors*.
 
-**Sports & Community:**
-- AAG Football
-- Men's Knockout Team
-- Arts in Schools
-- Under 16 Girls Team
-
-**Enterprise & Training:**
-- Mounty Arms training
-- Barista training
-- Garden produce cooking
-- Bike repair workshop
-
-The kids love us going into the schools. We're good role models. Most of us didn't have positive role models growing up, but now when we step into schools, kids really look up to us and listen.`,
+Youth ownership is built through effort and contribution, not gifting. Funders are not just paying for outputs—they are paying for **a place young people can claim**, which then becomes the platform for all future programming, hosting, inquiry participation, and advisory work.`,
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-isaiah-input',
+      type: 'quote',
+      content: "This is for the kids… without the input, we didn't know what they want.",
+      author: "Isaiah",
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-archie-effort',
+      type: 'quote',
+      content: "They're showing them that sometimes you can't get everything handed to you… realistically, you're gonna have to do it yourself.",
+      author: "Archie",
       layout: 'center'
     },
 
-    // ===== SECTION 5: THE SPACE =====
+    // ===== WHAT MOUNTY FEELS LIKE =====
     {
-      id: 'section-11',
+      id: 'section-divider-3',
       type: 'divider',
-      content: 'The Space',
+      content: 'What Mounty Feels Like',
       layout: 'center'
     },
     {
-      id: 'section-12',
+      id: 'section-feel',
       type: 'text',
-      content: `## What We're Building
+      content: `## Safety, No Judgement, Being Yourself
 
-The site sat empty for so long, but now the first bit has been dug up. We can't wait.
+In the interviews, you can feel the social safety that Mounty provides—especially contrasted against the pressure cooker of postcode wars, violence, and street boredom.
 
-**What Success Looks Like:**
-I just want to be able to see the kids look at it and say "they done that—they helped do that." A good spot where it gets utilised. Kids in there playing. Kids saying "I helped with this garden" or "we chose this" or "we done this artwork."
-
-**Something the youth can be proud of. And then we can be proud to say—look, we helped put this here for our community.**
-
-**Planned Elements:**
-- **Yarning Circle** — "That's where everyone comes together"
-- **Half Court** — Basketball for the kids
-- **Garden** — Use what they grow to cook and feed the community
-- **Container Spaces** — For programs and just being together
-- **Fire Pit** — For gathering and connection
-- **Mesh Screening** — Privacy so kids feel safe`,
+This matters for the backyard, because a built environment can either strengthen that feeling or undermine it. The backyard activation, done right, becomes a **physical expression of "no judgement, safe, youth-led"** rather than just a functional yard.`,
       layout: 'center'
     },
     {
-      id: 'section-13',
+      id: 'section-quote-polly',
+      type: 'quote',
+      content: "I can express myself, I can be myself around these people… You just don't need to feel judged by anyone.",
+      author: "Polly",
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-isabella',
+      type: 'quote',
+      content: "The mentors… they're easy to talk to… there's no pressure… and you don't feel judged.",
+      author: "Isabella",
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-home',
+      type: 'quote',
+      content: "It's almost like a second home. Even a first home for some kids. They can actually come here and just be themselves, express their feelings, or they can just come in and be kids.",
+      author: "Mounty Yarns Team",
+      layout: 'center'
+    },
+
+    // ===== WHAT WAS BUILT =====
+    {
+      id: 'section-divider-4',
+      type: 'divider',
+      content: 'What the Day Produced',
+      layout: 'center'
+    },
+    {
+      id: 'section-built',
+      type: 'text',
+      content: `## Concrete Actions + Cultural Signals
+
+### The Aboriginal Flag
+Painted on the container and laid out in mulch on the ground. These are not decorative details—they are **ownership markers**. They tell young people and visitors: *this is a place with cultural governance and pride, not a borrowed warehouse.*
+
+### Yarning Circle & Fire Pit
+The centre of gravity for the whole space. *"The main thing, the yarning circle and the fire pit"* — a deliberate separation between making and gathering.
+
+### Physical Layout Planning
+Rich on-the-ground design thinking: how to balance privacy from the street, safe access, garden placement, and youth comfort.
+
+### Privacy Infrastructure
+Mesh screening and trees/hedges to protect youth who don't want to be watched. *"Some of the kids don't like doing anything in front of everyone… that's why we tucked it away in the back."*
+
+### Secure Storage
+A lockable container to protect valuables and tools—because youth need *their own tools*, and a secure place to keep them.`,
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-flag',
+      type: 'quote',
+      content: "They painted the aboriginal flag on the container and we're making an aboriginal flag outta mulch.",
+      author: "Archie",
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-yarning',
+      type: 'quote',
+      content: "I reckon [the yarning circle] would probably be the main one 'cause that's where everyone come together.",
+      author: "Group Yarn",
+      layout: 'center'
+    },
+    {
+      id: 'section-map-link',
       type: 'map-link',
       content: 'Explore the interactive map to see all planned locations.',
       locationId: 'yarning-circle',
       layout: 'center'
     },
 
-    // ===== SECTION 6: THE BIGGER VISION =====
+    // ===== PAYING YOUNG PEOPLE =====
     {
-      id: 'section-14',
+      id: 'section-divider-5',
+      type: 'divider',
+      content: 'Dignity & Workforce Pathway',
+      layout: 'center'
+    },
+    {
+      id: 'section-paid',
+      type: 'text',
+      content: `## Paying Young People
+
+The day included paid work—not as charity, but as dignity and realism.
+
+This aligns with the wider ambition of youth as experts, not recipients. Mounty is building a **credible pathway** from "turn up" to "work-ready" to "paid leadership."
+
+We are not paying "participants." We are paying stewards, hosts, builders, and emerging leaders.`,
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-paid',
+      type: 'quote',
+      content: "Unfortunately that's just a part of life… reward 'em… 'cause when you're out there in the workforce, obviously you get paid for doing it.",
+      author: "Archie",
+      layout: 'center'
+    },
+
+    // ===== WHAT SUCCESS LOOKS LIKE =====
+    {
+      id: 'section-divider-6',
+      type: 'divider',
+      content: 'What Success Looks Like',
+      layout: 'center'
+    },
+    {
+      id: 'section-success',
+      type: 'text',
+      content: `## Pride, Use, Belonging
+
+The most funder-ready "outcome line" describes:
+- the **mechanism** (kids build it)
+- the **outcome** (pride, use, belonging)
+- the **evidence** (you can point to the thing and say "they did that")
+
+This is exactly the sort of proof a site-based investment is meant to create.`,
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-success',
+      type: 'quote',
+      content: "I just want to be able to see the kids look at it and say 'they done that—they helped do that.' A good spot where it gets utilised. Kids in there playing. Kids saying 'I helped with this garden' or 'we chose this' or 'we done this artwork.'",
+      author: "Group Yarn",
+      layout: 'center'
+    },
+    {
+      id: 'section-quote-proud',
+      type: 'quote',
+      content: "Something the youth can be proud of. And then we can be proud to say—look, we helped put this here for our community.",
+      author: "Mounty Yarns Team",
+      layout: 'center'
+    },
+
+    // ===== THE BIGGER VISION =====
+    {
+      id: 'section-divider-7',
       type: 'divider',
       content: 'The Bigger Vision',
       layout: 'center'
     },
     {
-      id: 'section-15',
+      id: 'section-vision',
       type: 'text',
       content: `## More Spaces, More Kids Being Kids
 
 The more of these spaces pop up around Australia, the better. You'll get kids coming back being kids again. Instead of having to be a "fully grown gangster" by 15 or 16, kids can just be kids.
 
-There's places like Moree, Alice Springs, Dubbo that need something like this. The best thing about those places is they're still connected with Country. We hunt Woolies over here—but those kids can go out hunting, fishing, connecting.
+There's places like Moree, Alice Springs, Dubbo that need something like this. The best thing about those places is they're still connected with Country.
 
 **If we can work out how to do this, we'd be keen to help others build their own spaces.**`,
       layout: 'center'
     },
     {
-      id: 'section-16',
+      id: 'section-quote-vision',
       type: 'quote',
       content: "The more of these pop up, the better. Hopefully things keep getting better. Kids being kids again.",
-      author: "Mounty Yarns Team Member",
+      author: "Mounty Yarns Team",
+      layout: 'center'
+    },
+
+    // ===== HOW TO SUPPORT =====
+    {
+      id: 'section-divider-8',
+      type: 'divider',
+      content: 'How to Support',
       layout: 'center'
     },
     {
-      id: 'section-17',
+      id: 'section-support',
       type: 'text',
-      content: `## Partnership
+      content: `## What the Conversations Suggest
+
+### 1. Invest in the Yard as a System
+Because the yard is meant to be used daily, support should prioritise: secure storage for tools and assets, shade and heat resilience, basic amenities that make it safe and welcoming.
+
+### 2. Fund Paid Youth Roles as Core Infrastructure
+Paying young people is both practical (how the world works) and dignity-building (reward, responsibility, pathway).
+
+### 3. Support the Story Engine
+Documentation as power. The build is being turned into a documentary-style story and a shareable page that explains the vibe and the why. That is a strategic asset in its own right.
+
+### 4. Protect Youth Privacy Through Design
+Visibility can be violence if done wrong. The yard must be designed so young people can be present without feeling watched.`,
+      layout: 'center'
+    },
+
+    // ===== PARTNERSHIP =====
+    {
+      id: 'section-divider-9',
+      type: 'divider',
+      content: 'Partnership',
+      layout: 'center'
+    },
+    {
+      id: 'section-partnership',
+      type: 'text',
+      content: `## Who's Behind This
 
 **Just Reinvest NSW** leads the Mounty Yarns initiative, working alongside Aboriginal young people and community partners.
 
@@ -224,7 +351,7 @@ There's places like Moree, Alice Springs, Dubbo that need something like this. T
 - Community Elders
 
 **Getting Things Moving:**
-[A Curious Tractor](https://act.place) provides support to help communities build spaces like this—energy when it's needed, then stepping back so you can take the wheel. Like a PTO: power on tap, control always yours.
+[A Curious Tractor](https://act.place) provides support to help communities build spaces like this—energy when it's needed, then stepping back so you can take the wheel.
 
 ---
 

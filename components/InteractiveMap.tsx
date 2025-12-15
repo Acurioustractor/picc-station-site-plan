@@ -60,7 +60,7 @@ export default function InteractiveMap() {
       case 'photo':
         return '/images/old-site.webp';
       case 'photo-after':
-        return '/images/old-site-day-1.webp';
+        return '/images/current-site.webp';
       case 'sketch':
         return '/images/sketch-reference.webp';
       default:
@@ -74,20 +74,19 @@ export default function InteractiveMap() {
       <header className="bg-gradient-to-b from-white to-stone-50/50 border-b border-stone-200/60 px-3 sm:px-4 md:px-8 py-3 md:py-4 flex flex-col lg:flex-row items-center justify-between shadow-sm z-20 gap-3 md:gap-6 backdrop-blur-sm">
         <div className="flex items-center gap-2 sm:gap-4 w-full lg:w-auto justify-between lg:justify-start">
           <div className="flex items-center gap-2 sm:gap-4">
-            <div className="relative w-16 h-8 sm:w-20 sm:h-10 md:w-24 md:h-12 opacity-90 hover:opacity-100 transition-opacity">
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 opacity-90 hover:opacity-100 transition-opacity">
               <Image
-                src="/images/picc-logo-transparent.png"
-                alt="PICC Logo"
+                src="/images/mounty-logo.png"
+                alt="Mounty Yarns Logo"
                 fill
                 className="object-contain"
-                sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 96px"
+                sizes="(max-width: 640px) 40px, (max-width: 768px) 48px, 56px"
               />
             </div>
             <div className="border-l border-stone-300 pl-2 sm:pl-4 h-8 sm:h-12 flex items-center">
-              <h1 className="text-lg sm:text-xl md:text-2xl font-serif font-light tracking-wide text-stone-800 relative">
-                <span className="font-normal">The</span>{' '}
-                <span className="font-semibold bg-gradient-to-r from-stone-800 to-stone-600 bg-clip-text text-transparent">Centre</span>
-              </h1>
+              <Link href="/" className="text-lg sm:text-xl md:text-2xl font-serif font-light tracking-wide text-stone-800 relative hover:opacity-80 transition-opacity">
+                <span className="font-semibold bg-gradient-to-r from-stone-800 to-stone-600 bg-clip-text text-transparent">Mounty</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -12,8 +12,7 @@ export default function ImageSlider({ onLayerChange, currentLayer = 'photo' }: I
   const layers: { id: ImageLayer; label: string; icon: any }[] = [
     { id: 'photo', label: 'Before', icon: Camera },
     { id: 'photo-after', label: 'After', icon: Sparkles },
-    { id: 'drawing', label: 'Drawing', icon: Pencil },
-    { id: 'sketch', label: 'Sketch', icon: ImageIcon }
+    { id: 'drawing', label: 'Drawing (Future)', icon: Pencil }
   ];
 
   return (

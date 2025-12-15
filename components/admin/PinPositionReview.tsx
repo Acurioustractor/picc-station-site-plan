@@ -25,7 +25,7 @@ export default function PinPositionReview({ locations, onUpdate }: PinPositionRe
       case 'photo':
         return '/images/old-site.webp';
       case 'photo-after':
-        return '/images/old-site-day-1.webp';
+        return '/images/current-site.webp';
       case 'sketch':
         return '/images/sketch-reference.webp';
       default:

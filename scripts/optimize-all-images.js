@@ -20,7 +20,7 @@ const config = {
 const imageSources = [
   // Final Photos to public/images
   {
-    input: path.join(__dirname, '../../Final Photos/Old-site.jpg'),
+    input: path.join(__dirname, '../../Final Photos/Old-site-image.jpg'),
     outputDir: path.join(__dirname, '../public/images'),
     outputName: 'old-site',
   },

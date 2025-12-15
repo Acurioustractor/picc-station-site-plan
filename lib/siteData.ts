@@ -2,68 +2,80 @@ import { SiteContent } from '@/types';
 
 export const siteData: SiteContent = {
   about: {
-    title: "Mounty Yarns - Mount Druitt",
-    context: `**Mounty Yarns** is home. It brings everyone together—we're all from different places, but close. For some reason Mount Druitt was home for a lot of us, non-Indigenous people and Indigenous people. It's really diverse too, got a lot of nationalities.
+    title: "Mounty Yarns — Backyard Activation",
+    context: `**Home.** It brings everyone together. We're all from different places, but close. Mount Druitt is home for a lot of us—non-Indigenous people and Indigenous people. It's really diverse, got a lot of nationalities.
 
-Before we had this space, a lot of young people didn't really have somewhere to go that wasn't PCYC. We just needed a **safe place where young Black lives can hang around** and not be seen as consorting, like criminals or up to no good all the time. We just wanted to hang around sometimes—play football, just kick back with each other. It was like a family thing.
+Before we had this space, a lot of young people didn't really have somewhere to go. We just needed a **safe place where young Black lives can hang around** and not be seen as consorting, like criminals or up to no good all the time.
 
-*"It's almost like a second home. Even a first home for some kids. They can actually come here and just be themselves, express their feelings, or they can just come in and be kids."*`,
+*"This space has been in the make in the works for about three years now… but today, finally kicking it off."* — Isaiah
 
-    site: `The physical site is an open lot in the heart of Mount Druitt, ready for transformation into a community gathering space.
+The backyard activation is not "an improvement project." It is **infrastructure for belonging**—an operational base (tools, storage, shade, safer workflows) and a narrative engine (where stories get told, filmed, taught, and shared back to funders and decision-makers).`,
 
-**Current Features:**
-- **Container:** An existing shipping container on site—the starting point
-- **Open Ground:** Grassy area ready for development
-- **Street Frontage:** Prominent location on the main road
-- **Existing Trees:** Along the fence line providing some shade
+    site: `The backyard is being transformed into a **youth-led campus** with distinct zones designed by young people themselves.
 
-**What We're Building:**
-- **Yarning Circle** — "That's where everyone comes together"
-- **Half Court** — Basketball for the kids
-- **Garden** — "Use whatever they grow to cook and feed the community"
-- **Container Spaces** — For programs, workshops, and just being together
-- **Fire Pit** — For gathering and connection`,
+**What's Being Built:**
 
-    project: `The vision is to create a space where kids can look at it and say "they done that—they helped do that." A good spot that gets utilised. Not a place that just keeps building, but **kids in there playing, saying "I helped with this garden, we chose this, we done this artwork."**
+- **Yarning Circle & Fire Pit** — *"That's where everyone comes together."* The heart of the space for gathering, storytelling, and cultural connection.
+- **Aboriginal Flag** — Painted on the container and laid out in mulch on the ground. Ownership markers that say: *this is a place with cultural governance and pride*.
+- **Workshop Container** — Secure storage for tools and valuables. *"Get like another smaller container… whatever's valuable in that yard… it can go in there and lock 'em in there."*
+- **Privacy Screening** — Mesh and hedges to create safety. *"Some of the kids don't like doing anything in front of everyone… that's why we tucked it away in the back."*
+- **Half Court** — Basketball for the kids.
+- **Garden** — Use what they grow to cook and feed the community.
 
-**Current Programs:**
-- Youth on Track
-- Cultural Days
-- Boxing Fridays
-- Girls Program Wednesdays
-- Cooking Programs
-- Digital Art & Arts in Schools
-- AAG Football
-- Gym Program
-- Driver Licensing Program
-- Men's Knockout Team
+The layout is not just architecture—it's **governance**. Where you put privacy, how you manage visibility to the street, and how you separate zones all directly affects whether young people experience the yard as *theirs*.`,
 
-**Enterprise & Training:**
-- Mounty Arms training (charged to external organisations)
-- Barista training with coffee machines
-- Garden produce for community cooking
-- Bike repair workshop
-- **Life skills** — "If they're ever in a situation where they're by themselves, they know how to cook, clean and just look after themselves"`,
+    project: `The Dec 9–10 backyard activation was three things happening at once:
 
-    partnership: `**Just Reinvest NSW** leads the Mounty Yarns initiative, but it started with young people—youth ambassadors who spoke to funders and politicians and got their story out about how policies and procedures affected them.
+**1. A Practical Build Day**
+Painting, landscaping, framing, planning the layout. Young people and mentors working side by side.
 
-*"We had a lot of people behind us... Daniel, Nick, De, Sarah, Jess and Julie. People who believed in us."*
+**2. A Youth-Led Cultural Moment**
+Flag-making, gathering, mentoring, learning by doing. *"We're building… basically a safe space for young kids… teach 'em life skills, living skills."* — Archie
 
-**The Difference:**
-The difference between coming here versus case management? If you go to DCJ, it's just them telling the kid what to do—that authority thing. Sometimes you get a caseworker who doesn't care, just wants a paycheck. But here? **Their voice is actually heard.** People here hold systems to account. In a lot of systems you have to fit into a neat category—be over 12, have a charge. Here, **we want to help when help is needed.**
+**3. A Transition Point**
+From "we've talked about this for ages" to "we've started." Three years of planning turning into visible action.
 
-*"From one person to a team of 20 in three years."*
+**Why Youth Must Lead It:**
+*"This is for the kids… without the input, we didn't know what they want."* — Isaiah
 
-**Support Partners:**
-[A Curious Tractor](https://act.place) helps get things moving—providing energy and support when needed, then stepping back so communities can take the wheel. Like a PTO on a tractor: power when you need it, control always in your hands.`,
+*"They're showing them that sometimes you can't get everything handed to you… realistically, you're gonna have to do it yourself."* — Archie
 
-    impact: `**Role Models:** Most of us didn't have positive role models growing up, but we all had different ways. Now when we step into schools, kids really look up to us and listen. A lot of them don't have any role models. We just give them a positive role model in their lives.
+Youth ownership is built through effort and contribution, not gifting. Funders are not just paying for outputs—they are paying for **a place young people can claim**, which becomes the platform for all future programming.`,
 
-**The Bigger Vision:** The more of these spaces pop up around Australia, the better. You'll get kids coming back being kids again. Instead of having to be a "fully grown gangster" by 15 or 16, kids can just be kids.
+    partnership: `**Just Reinvest NSW** leads the Mounty Yarns initiative, working alongside Aboriginal young people and community partners.
 
-*"We can be proud to say—look, we helped put this here for our community."*
+**The Team:**
+It started with youth ambassadors who spoke to funders and politicians and got their story out. *"Funders and politicians were blown away by the young people saying something that had never been said before."*
 
-This site on Darug Country honors the Darug people and the many Nations who call Mount Druitt home. The project is grounded in story, guided by solutions, and built to evolve with new stories and community voices.`
+**From one person to a team of 20 in three years.**
+
+**Partners Include:**
+- IAG (driver licensing funding)
+- Local art galleries
+- Schools across Mount Druitt
+- Community Elders
+- A Curious Tractor (site activation support)
+
+**Paying Young People:**
+*"Unfortunately that's just a part of life… reward 'em… 'cause when you're out there in the workforce, obviously you get paid for doing it."* — Archie
+
+We are not paying "participants." We are paying stewards, hosts, builders, and emerging leaders.`,
+
+    impact: `**What Mounty Feels Like:**
+
+*"I can express myself, I can be myself around these people… You just don't need to feel judged by anyone."* — Polly
+
+*"The mentors… they're easy to talk to… there's no pressure… and you don't feel judged."* — Isabella
+
+*"It's almost like a second home. Even a first home for some kids. They can actually come here and just be themselves, express their feelings, or they can just come in and be kids."*
+
+**What Success Looks Like:**
+
+*"I just want to be able to see the kids look at it and say 'they done that—they helped do that.' A good spot where it gets utilised. Kids in there playing. Kids saying 'I helped with this garden' or 'we chose this' or 'we done this artwork.'"*
+
+**Something the youth can be proud of. And then we can be proud to say—look, we helped put this here for our community.**
+
+The more of these spaces pop up around Australia, the better. You'll get kids coming back being kids again. Instead of having to be a "fully grown gangster" by 15 or 16, kids can just be kids.`
   },
 
   locations: [
@@ -83,8 +95,8 @@ This site on Darug Country honors the Darug people and the many Nations who call
     },
     {
         "id": "existing-container",
-        "x": 40.625,
-        "y": 77.02380952380953,
+        "x": 40.52100758975452,
+        "y": 67.84183246670622,
         "title": "Existing Container",
         "type": "building",
         "description": "The original shipping container on site - foundation of the space.",
@@ -116,8 +128,8 @@ This site on Darug Country honors the Darug people and the many Nations who call
     },
     {
         "id": "new-container",
-        "x": 43.839285714285715,
-        "y": 63.57142857142857,
+        "x": 47.04158613797138,
+        "y": 50.66062549838877,
         "title": "New Container",
         "type": "building",
         "description": "Additional container space for expanded programs and activities.",
@@ -149,8 +161,8 @@ This site on Darug Country honors the Darug people and the many Nations who call
     },
     {
         "id": "yarning-circle",
-        "x": 36.25,
-        "y": 69.4047619047619,
+        "x": 40.67625945995015,
+        "y": 58.837223995359125,
         "title": "Yarning Circle",
         "type": "utility",
         "description": "Community gathering space for storytelling and connection.",
@@ -196,8 +208,8 @@ This site on Darug Country honors the Darug people and the many Nations who call
     },
     {
         "id": "share-space",
-        "x": 43.839285714285715,
-        "y": 58.0952380952381,
+        "x": 64.81792527537213,
+        "y": 40.206999571882356,
         "title": "Share Space",
         "type": "utility",
         "description": "Flexible community area for sharing, workshops, and gatherings.",
@@ -229,8 +241,8 @@ This site on Darug Country honors the Darug people and the many Nations who call
     },
     {
         "id": "pathway",
-        "x": 30,
-        "y": 59.166666666666664,
+        "x": 29.420498870766277,
+        "y": 47.55558809447597,
         "title": "Pathway",
         "type": "infrastructure",
         "description": "Connecting paths through the site.",
@@ -262,8 +274,8 @@ This site on Darug Country honors the Darug people and the many Nations who call
     },
     {
         "id": "trees",
-        "x": 24.285714285714285,
-        "y": 47.14285714285714,
+        "x": 19.63963104844097,
+        "y": 32.65140855569456,
         "title": "Trees & Shade",
         "type": "nature",
         "description": "Existing and new trees providing shade and connection to Country.",
@@ -295,8 +307,8 @@ This site on Darug Country honors the Darug people and the many Nations who call
     },
     {
         "id": "main-entry",
-        "x": 18.125,
-        "y": 54.285714285714285,
+        "x": 15.8359602286478,
+        "y": 40.828007052664915,
         "title": "Main Entry",
         "type": "infrastructure",
         "description": "Primary access point and welcoming entrance to the site.",
